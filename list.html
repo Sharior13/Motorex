@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List | Motorex</title>
+    <link rel="icon" type="image/x-icon" href="images/0.ico">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+        </div>
+        <a href="index.html">
+        <div class="d-flex justify-content-center padding-left">
+          <img src="images/1.png" alt="Motorex" style="height: 60%; width: 60%;">
+        </div>
+        </a>
+        <div class="padding-left">
+          <a class="btn btn-lg btn-dark" href="searchbar.html" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="p-3">
+        <a class="btn btn-lg btn-dark" href="login.html" role="button">Login</a>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+            <span class="logo-name align-items-center">MOTOREX</span>
+          </div>  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-sharp fa-solid fa-house icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="list.html" class="nav-link">
+                  <i class="fa-solid fa-list icon"></i>
+                  <span class="link">List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery.html" class="nav-link">
+                  <i class="fa-regular fa-images icon"></i>
+                  <span class="link">Gallery</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="articles.html" class="nav-link">
+                  <i class="fa-solid fa-file-contract icon"></i>
+                  <span class="link">Articles</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-regular fa-address-card icon"></i>
+                  <span class="link">Contact us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+            </ul>
+            <div class="lists">
+              <li class="list">
+                <a href="account.html" class="nav-link">
+                  <i class="fa-regular fa-circle-user icon"></i>
+                  <span class="link">Account</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script>
+        const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+          overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      </script>
+      <section class="mt-5 pt-4"></section>
+      <section class="container">
+        <div class="bg-black bg-opacity-25 text-light text-center font-monospace py-5"><h4>The following is a list of popular car companies with their logos, country of origin and their establishment date.</h4></div>
+        <div class="row ms-5 ps-5 pt-2">
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/38.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Acura</h5>
+              <p class="card-text">Country: USA <br> Established: 1986 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Acura is the luxury brand of Honda. It was founded in 1986, mainly for the north American market. Other Japanese car makers have followed its lead like Nissan with Infiniti and Toyota with Lexus. Acura has also participated in american car racing with success.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/37.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Alfa Romeo</h5>
+              <p class="card-text">Country: Italy<br> Established: 1910 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Alfa Romeo was founded in 1910 in Milan, at the beginning only as A.L.F.A., "Anonima Lombarda Fabbrica Automobili", och almost immideately it started its venture in motor racing. The name Romeo derives from Nicola Romeo who turned the company into an arms manufacturer during the first world war. After the war, Alfa Romeo went back to making cars.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/39.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Alpine</h5>
+              <p class="card-text">Country: France<br> Established: 1955 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Alpine was founded in Dieppe in 1955 by Jean Rédélé and made racing cars based on humble Renault cars like the 4CV. Alpine were very successful in racing in the 50s and 60s, 1973 the company was bought by Renault and continued making performance models of Renault cars, often sporty two-seaters.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/40.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Aston Martin</h5>
+              <p class="card-text">Country: United Kingdom<br> Established: 1913 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Aston Martin was founded in 1913 by Robert Bamford and Lionel Martin. The production was soon halted due to the world war. When the war was over the companions started making racing cars for competing in races like the French Grand Prix and at Brooklands. After a couple of bankruptcies in the 20s the founders had left the company which soldiered on, making sports cars.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/41.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Audi</h5>
+              <p class="card-text">Country: Germany<br> Established: 1965 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">The origins of Audi, the premium brand of the Volkswagen Group is not very easy to follow, but it is safe to say that the marque was founded by August Horch in the early 1900's as he had been maneuvered out of his earlier company, Horch. The two brands were however joined together again in 1932 when they formed Auto Union together with DKW and Wanderer, hence the logo with four rings joined together.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/42.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Bentley</h5>
+              <p class="card-text">Country: United Kingdom<br> Established: 1919 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Bentley Motors Limited is a British designer, manufacturer and marketer of luxury cars and SUVs. Headquartered in Crewe, England, the company was founded as Bentley Motors Limited by W. O. Bentley (1888–1971) in 1919 in Cricklewood, North London, and became widely known for winning the 24 Hours of Le Mans in 1924, 1927, 1928, 1929 and 1930.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/43.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">BMW</h5>
+              <p class="card-text">Country: Germnay<br> Established: 1927 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">BMW, Bayrische Motoren Werke was founded in 1916 by Franz Josef Popp, from the aircraft engine manufacturer Rapp. During the first years, production was focused on motorcycles, and the first car, a license built Austin Seven called Dixi, was presented in 1928. During the 30's success was made on the race tracks with open sports cars, where 327 och 328 are probably the most famous models.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/44.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Brilliance Auto</h5>
+              <p class="card-text">Country: China<br> Established: 2002 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Brilliance China Automotive Holdings (Brilliance Auto) previously produced "Brilliance" branded cars under manufacturing unit Brilliance Motor which has since been sold to BMW. Brilliance Auto also holds 25% of BMW Brilliance, a joint venture with BMW which produces, distributes and sells BMW passenger cars in mainland China</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/45.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Bugatti</h5>
+              <p class="card-text">Country: France<br> Established: 1910 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Automobiles Ettore Bugatti was a French manufacturer of high-performance automobiles. The company was founded in 1909 in the then-German city of Molsheim, Alsace, by the Italian-born industrial designer Ettore Bugatti. The cars were known for their design beauty and for their many race victories. Famous Bugatti automobiles include the Type 35 Grand Prix cars, the Type 41 "Royale", the Type 57 "Atlantic" and the Type 55 sports car.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/46.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Cadillac</h5>
+              <p class="card-text">Country: USA<br> Established: 1902 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Cadillac was founded 1902 out of the remains of Henry Fords first company. Cadillac became the luxury brand of GM in 1909, and between 1927 and 1940, La Salle cars based on Cadillac models were produced to fill the gap to the cheaper GM marque, Buick. Cadillac cars have often been extravagant, like the 30's 16-cylinder models as well as the coupés and cabriolets of the late 50's</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/47.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Chevrolet</h5>
+              <p class="card-text">Country: USA<br> Established: 1912 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Chevrolet, the crown jewel of General motors portfolio saleswise, and one of the most known brands was founded 1911 by Louis Chevrolet and Willian C. Durant. 1918 it was made a part of GM. Chevrolet was right from the start targeted to compete with Ford's highly successful Model T.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/48.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Dacia</h5>
+              <p class="card-text">Country: Romania<br> Established: 1968 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">The Romanian car company Dacia was founded by the communist party in 1966, and its first car a licensed version of the Renault 8 rolled off the assembly line in 1968. In 1969, the Dacia 1300, a licensed Renault 15 was presented. Dacia 1300 was to be produced until 2004, albeit modernised from time to time. Dacia also developed their own versions of the 1300, where one of the most known is the 1307, a crew cab pick-up. Dacias first in-house developed car, Dacia Nova, went on market in 1995.</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/49.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Datsun</h5>
+              <p class="card-text">Country: Japan<br> Established: 1930 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Nissan emerged as a car maker in 1930 when the company aquired DAT Motorcar Co. Nissan's car production was developed during the 30's, not least when licensed production of the Austin 7 began. The cars were predominantly sold under the brand Datsun, and the name Nissan was used for commercial vehicles on the Japanese market. In 1966 Nissan/Datsun merged with Japanese car maker Prince, the company behind the Skyline-models still being produced today. </div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/50.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Dodge</h5>
+              <p class="card-text">Country: USA<br> Established: 1914 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Dodge is an American brand of automobiles and a division of Stellantis North America, based in Auburn Hills, Michigan. Dodge vehicles have historically included performance cars, and for much of its existence Dodge was Chrysler's mid-priced brand above Plymouth.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/51.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Ferrari</h5>
+              <p class="card-text">Country: Italy<br> Established: 1939 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Ferrari is an Italian luxury sports car manufacturer based in Maranello, Italy. Founded in 1939 by Enzo Ferrari, the company adopted its current name in 1945 and began producing its line of cars in 1947. Ferrari became a public company in 1960, and from 1969 to 2014 it was a subsidiary of Fiat S.p.A. It was spun off from Fiat's successor entity, Fiat Chrysler Automobiles, in 2016.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/52.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Fiat</h5>
+              <p class="card-text">Country: Italy<br> Established: 1899 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Fiat, "Fabbrica Italiana Automobili Torino" was founded in 1899, opening its first factory in 1900. The first year's production was a mere 24 vehicles. Already in 1908 Fiat started selling its cars in the U.S., where it was an exclusive and luxurious brand, a lot more expensive than the average domestic Ford or Chevy. In 1916, Fiat started building the Lingotto plant in Turin, a building by many considered one of the world's most beautiful car factories. During the Italian regime of the 30's Fiat had to concentrate on the domestic market, turning more to production of small and inexpensive cars as well as railway equipment and airplanes. </div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/53.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Ford</h5>
+              <p class="card-text">Country: USA<br> Established: 1903 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Ford was founded in 1903 and quickly became one of the largest car manufacturers, all because of Ford Model T, the car that put America on wheels. It was produced in more than 15 million units between 1908 and 1927. Fords founder, the eccentric  industrialst Henry Ford, was both forward thinking and conservative, ignoring that Model T didn't  keep up with its competition during the 20s</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/54.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Honda</h5>
+              <p class="card-text">Country: Japan<br> Established: 1949 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Honda was founded in the 1930s, as a workshop making parts as a subcontractor for Toyota, but soon developed into producing engines and motorcycles. Honda's first car, a small 360 cc delivery van was presented in 1963, and the first passenger car, the S500, a tiny open sports car in 1964.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/55.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Hyundai</h5>
+              <p class="card-text">Country: South Korea<br> Established: 1968 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">South Korean Hyundai started producing cars in 1967, the first model being a licensed Ford Cortina. During the beginning of the 1970s, former British Leyland executives and engineers were hired to help develop their first car. The result was the Hyundai Pony, designed by Giorgio Giugiaro with drive train from Mitsubishi. </div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/56.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Isuzu</h5>
+              <p class="card-text">Country: Japan<br> Established: 1963 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Isuzu Motors Ltd. commonly known as Isuzu, is a Japanese multinational automobile manufacturer headquartered in Nishi-ku, Yokohama, Japan. Its principal activity is the production, marketing and sale of Isuzu commercial vehicles and diesel engines.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/57.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Jeep</h5>
+              <p class="card-text">Country: USA<br> Established: 1948 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Jeep developed into a strong brand which has had many owners over the years, as Willys was aquired by Kaiser in 1953. In 1970 AMC, American Motors Corporation bought the Jeep brand from Kaiser, and in 1987 it was a part of the Chrysler Corporation which today is a part of Fiat-Chrysler. In 1974 the Jeep Cherokee was added to the model line-up. In the 90's some of the potential of the brand was used for more models, and today cars like the Renegade, the Wrangler and Grand Cherokee are produced.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/58.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Koenigsegg</h5>
+              <p class="card-text">Country: Sweden<br> Established: 1994 A.D</p>
+            </div>
+            <div class="popout-menu text-justify"> The supercar manufacturer Koenigsegg was founded in 1994 by Swedish entrepreneur Christian von Koenigsegg. The company's first road legal car was finished in 2002, and since then Koenigsegg has built a reputation and brand as being one of the leading manufacturers in its genre by constant developing and fine tuning. The cars are extremely costly, hand made in very low series</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/59.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Lamborghini</h5>
+              <p class="card-text">Country: Italy<br> Established: 1964 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Automobili Lamborghini S.p.A.   is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi. The company was noted for using a rear mid-engine, rear-wheel drive layout. Lamborghini grew rapidly during its first decade, but sales plunged in the wake of the 1973 worldwide financial downturn and the oil crisis.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/60.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Land Rover</h5>
+              <p class="card-text">Country: United Kingdom<br> Established: 1948 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Land Rover is a British brand of predominantly four-wheel drive, off-road capable vehicles, owned by multinational car manufacturer Jaguar Land Rover (JLR), since 2008 a subsidiary of India's Tata Motors. JLR currently builds Land Rovers in Brazil, China, India, Slovakia, and the United Kingdom. The Land Rover name was created in 1948 by the Rover Company for a utilitarian 4WD off-road vehicle; currently, the Land Rover range consists solely of upmarket and luxury sport utility vehicles.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/61.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Lexus</h5>
+              <p class="card-text">Country: Japan<br> Established: 1989 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Lexus is the luxury vehicle division of the Japanese automaker Toyota. The Lexus brand is marketed in more than 90 countries and territories worldwide and is Japan's largest-selling make of premium cars. It has ranked among the 10 largest Japanese global brands in market value. Lexus is headquartered in Nagoya, Japan. Operational centers are located in Brussels, Belgium, and Plano, Texas, United States.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/62.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Lotus</h5>
+              <p class="card-text">Country: United Kingdom<br> Established: 1956 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Lotus Cars Limited is a British automotive company headquartered in Norfolk, England, which manufactures sports cars and racing cars noted for their light weight and fine handling characteristics. Lotus was previously involved in Formula One racing, via Team Lotus, winning the Formula One World Championship seven times.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/63.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Mahindra</h5>
+              <p class="card-text">Country: India<br> Established: 2002 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Mahindra & Mahindra Limited (M&M) is an Indian multinational automotive manufacturing corporation headquartered in Mumbai. It was established in 2002 as Mahindra & Mohammed and later renamed as Mahindra & Mahindra</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/64.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Mazda</h5>
+              <p class="card-text">Country: Japan<br> Established: 1970 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">The company behind Japanese Mazda was founded in 1920, and started making cars in the early 60's. The first model was a V-twin light weight two-seater, the R360. Mazda developed Wankel engines already during the 60's in co-operation with German NSU, then developing the famous Ro 80. </div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/65.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">McLaren</h5>
+              <p class="card-text">Country: United Kingdom<br> Established: 1993 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">McLaren Automotive (formerly known as McLaren Cars) is a British luxury automotive manufacturer based at the McLaren Technology Centre in Woking, England. The main products of the company are sports cars, which are produced in-house in designated production facilities. In July 2017, McLaren Automotive became a wholly-owned subsidiary of the wider McLaren Group.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/66.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Mercedes-Benz</h5>
+              <p class="card-text">Country: Germnay<br> Established: 1926 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Mercedes-Benz, produced by Daimler AG which is considered the world's first car maker, dating back to Benz, founded by Karl Benz, the father of the automobile with internal combustion engine, in 1886. Daimler and Benz merged  in 1926, thus producing the first Mercedes-Benz car.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/67.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Mitsubishi</h5>
+              <p class="card-text">Country: Japan<br> Established: 1917 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Mitsubishi's history as car maker started in 1917 when Model A (based on Fiat Tipo 3) was presented, beleived to be one of Japan's first cars in serial production, even though only 22 were built. After this commercial failure, Mitsubishe went back to producing ships, aircrafts and railway cars until after the second world war.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/68.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Nissan</h5>
+              <p class="card-text">Country: Japan<br> Established: 1951 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Nissan emerged as a car maker in 1934 when the company aquired DAT Motorcar Co., founded in 1911. Nissan's car production was developed during the 30's, not least when licensed production of the Austin 7 began. The cars were predominantly sold under the brand Datsun, and the name Nissan was used for commercial vehicles on the Japanese market.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/69.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Porsche</h5>
+              <p class="card-text">Country: Germany<br> Established: 1931 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Porsche was founded in Stuttgart in 1931 as a vehicle development consultant company by engineer Ferdinand Porsche . One of its first assignments came from the German regime and led to the development of the KDF-wagen, the German people's car which later on was to be produced as the Volkswagen Type 1, the "Beetle".</div>
+          </div>
+
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/70.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Renault</h5>
+              <p class="card-text">Country: France<br> Established: 1899 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Renault was founded in 1899 by Luois Renault and his two brothers. Renault quite quickly grew into a successful french car company, producing models in all segments from small to large luxury car chassis meant for coachbuilders. During the first world war Renault produced tanks, but when the war had ended it went back to car manufacturing</div>
+          </div>
+          
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/71.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Rolls Royce</h5>
+              <p class="card-text">Country: United Kingdom<br> Established: 1904 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Rolls-Royce Motor Cars Limited is a British luxury automobile maker which has operated as a wholly owned subsidiary of BMW AG since 2003 – as the exclusive manufacturer of Rolls-Royce-branded motor cars. The company's administrative and production headquarters are located on the Goodwood Estate in Goodwood, West Sussex, England, United Kingdom.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/72.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Skoda</h5>
+              <p class="card-text">Country: Czech Republic<br> Established: 1925 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Škoda Auto, often shortened to Škoda, is a Czech automobile manufacturer established in 1925 as the successor to Laurin & Klement and headquartered in Mladá Boleslav, Czech Republic. Škoda Works became state owned in 1948. After 1991, it was gradually privatized to the German Volkswagen Group, becoming a partial subsidiary in 1994 and a wholly owned subsidiary in 2000.]</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/73.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Subaru</h5>
+              <p class="card-text">Country: Japan<br> Established: 1954 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Subaru is the car branch of the the Japanese conglomerate Fuji Heavy Industries (FHI), which has been around since 1915. Car production was started in 1954, the first model being the 1500, a small saloon car with a 1,5-litre Peugeot engine.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/74.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Suzuki</h5>
+              <p class="card-text">Country: Japan<br> Established: 1909 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Suzuki is one of the largest car and engine manufacturers, but it's history begins already in 1909 when Michio Suzuki started making weaving looms for the silk industry in the Japanese town of Hamamatsu. Already in the 30's Suzuki was working on developing small cars, but due to WWII these plans were abandoned. In 1952, motorcycle production was started and the plans for making cars were taken up again.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/75.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Tata</h5>
+              <p class="card-text">Country: India<br> Established: 1994 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Tata Motors Limited is an Indian multinational automotive manufacturing company, headquartered in Mumbai, India, which is part of the Tata Group. The company produces passenger cars, trucks, vans, coaches, buses.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/76.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Tesla</h5>
+              <p class="card-text">Country: USA<br> Established: 2008 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Founded in 2003 by among others, Elon Musk, the serial entrepreneur behind Paypal and SpaceX, Tesla Motors developes electic cars and batteries for home energy storage. Tesla's first model, Roadster was launched in 2008, but the saloon Tesla Model S in various specs has been a commercial success, offering usable range never seen among EV's before.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/77.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Toyota</h5>
+              <p class="card-text">Country: Japan<br> Established: 1937 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">The first Toyota, an   AA was built in 1936, but the company was founded in 1937 and is today one of the world's largest car makers. During the 40s and 50s Toyota were predominantly making cars for its domestic market and East Asia, but the Crown was introduced in the USA 1957, and some years later in Europe.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/78.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Volkswagen</h5>
+              <p class="card-text">Country: Germany<br> Established: 1946 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Volkswagen is a German car brand in the Volkswagen Group (formerly VAG), one of the world's largest car makers. The company of today was founded in 1946, but its first model Type 1, or "Beetle" was built on a car developed by Ferdninand Porsche during the 30s.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/79.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Volvo</h5>
+              <p class="card-text">Country: Sweden<br> Established: 1926 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Volvo was founded in 1926 as a subsidiary to SKF, the bearing factory of Gothenburg. The first car, an  ÖV4, an open car with a four-cylinder engine rolled out of the factory gates in 1927. Along with PV4, the saloon version it was produced until 1929.</div>
+          </div>
+          
+          <div class="card text-bg-dark m-2 reference" style="width: 18rem;">
+            <img src="images/80.jpg" class="card-img-top cis" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title">Zenvo</h5>
+              <p class="card-text">Country: Denmark<br> Established: 2009 A.D</p>
+            </div>
+            <div class="popout-menu text-justify">Zenvo Automotive A/S is a Danish sports car manufacturer located in Præstø on the Danish Island of Zealand. It was founded by Troels Vollertsen, and the name 'Zenvo' is derived from a combination of the last three and first two letters in his last name.</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <footer class="footer">
+          <div class="text-center">
+            <p>
+              <strong>&copy;Motorex 2023</strong>
+              <br>All Rights Reserved.<br>
+              <i class="fa-solid fa-envelope"></i> Motorex-official2023@gmail.com<br>
+              Follow us on 
+              <a href="https://www.facebook.com/robairakash/" target="_blank" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/oldcars_life/" target="_blank" class="text-dark"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.twitter.com/CARmagazine" target="_blank" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>

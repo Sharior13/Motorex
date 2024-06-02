@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula One racing | Motorex</title>
+    <link rel="icon" type="image/x-icon" href="images/0.ico">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style =" background-image: linear-gradient(rgba(0, 8, 51, 0.459),rgba(0, 8, 51, 0.459)), url('images/103.jpg'); background-position: center; background-size: cover;">
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+        </div>
+        <a href="index.html">
+        <div class="d-flex justify-content-center padding-left">
+          <img src="images/1.png" alt="Motorex" style="height: 60%; width: 60%;">
+        </div>
+        </a>
+        <div class="padding-left">
+          <a class="btn btn-lg btn-dark" href="searchbar.html" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="p-3">
+        <a class="btn btn-lg btn-dark" href="login.html" role="button">Login</a>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+            <span class="logo-name align-items-center">MOTOREX</span>
+          </div>  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-sharp fa-solid fa-house icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="list.html" class="nav-link">
+                  <i class="fa-solid fa-list icon"></i>
+                  <span class="link">List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery.html" class="nav-link">
+                  <i class="fa-regular fa-images icon"></i>
+                  <span class="link">Gallery</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="articles.html" class="nav-link">
+                  <i class="fa-solid fa-file-contract icon"></i>
+                  <span class="link">Articles</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-regular fa-address-card icon"></i>
+                  <span class="link">Contact us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+            </ul>
+            <div class="lists">
+              <li class="list">
+                <a href="account.html" class="nav-link">
+                  <i class="fa-regular fa-circle-user icon"></i>
+                  <span class="link">Account</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script>
+        const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+          overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      </script>
+      <section class="mt-5 pt-5"></section>
+      <section class="text-center px-5 pb-2">
+        <div class="bg-opacity-25 bg-black text-white ">
+          <div class="border pt-4 px-5 text-start">
+            <h1>Formula 1 and the Relationship Between Death, Danger, Safety and Popularity</h1><br>
+          </div>
+          <div class="pt-3 border fs-4 px-5 pb-5"> <br>
+            <img src="images/101.jpg" alt="Bugatti-image" style="height:auto; width:800px;" class="text-center"> <br> <br>
+            <p class="text-start">The biggest problem with modern Formula One, despite what you may read elsewhere, is not Pirelli, nor the difficulty of passing without the drag reduction system, nor the financial struggles of various teams. <br> <br>
+
+            It is the lack of danger. <br> <br>
+              
+            The spectre of death no longer hangs over every Grand Prix and, while this is certainly a positive development, it has robbed Grand Prix racing of some of its essence. <br> <br>
+              
+            Indeed, the sport’s current problems would have seemed quaint to the drivers of F1’s primitive years, who worried more about whether they would survive the race than about tyre compounds or sponsorships.</p> <br>
+            <img src="images/102.jpg" alt="Image" style="height:auto; width:800px;" class="text-center">  <br><br>
+            <p class="text-start">F1 Grand Prix racing became popular in the middle of the 20th century because it combined the glamour of fast cars driven by young men in exotic locales, from Buenos Aires to Monte Carlo, with the danger of fast cars driven by young men through deep forests in Germany and Belgium and at high-speed, purpose-built tracks from Italy to South Africa. <br><br>
+
+            The inaugural F1 World Championship season was in 1950, although Grand Prix racing has existed for almost as long as the automobile. <br><br>
+              
+            In the early days of the championship, death was a regular occurrence. The tally of F1 drivers killed changes based on the parameters of the list (drivers killed in practices or testing, drivers killed in non-championship races, etc.), but between 1955 and 1961, nine drivers were killed during races alone (including the Indianapolis 500, which was part of the World Championship from 1950 to 1961).</p> <br>
+          </div>
+        </div>
+      </section>
+      <section>
+        <footer class="footer">
+          <div class="text-center">
+            <p>
+              <strong>&copy;Motorex 2023</strong>
+              <br>All Rights Reserved.<br>
+              <i class="fa-solid fa-envelope"></i> Motorex-official2023@gmail.com<br>
+              Follow us on 
+              <a href="https://www.facebook.com/robairakash/" target="_blank" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/oldcars_life/" target="_blank" class="text-dark"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.twitter.com/CARmagazine" target="_blank" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>

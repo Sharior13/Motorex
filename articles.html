@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Motorex</title>
+    <link rel="icon" type="image/x-icon" href="images/0.ico">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+        </div>
+        <a href="index.html">
+        <div class="d-flex justify-content-center padding-left">
+          <img src="images/1.png" alt="Motorex" style="height: 60%; width: 60%;">
+        </div>
+        </a>
+        <div class="padding-left">
+          <a class="btn btn-lg btn-dark" href="searchbar.html" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="p-3">
+        <a class="btn btn-lg btn-dark" href="login.html" role="button">Login</a>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+            <span class="logo-name align-items-center">MOTOREX</span>
+          </div>  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-sharp fa-solid fa-house icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="list.html" class="nav-link">
+                  <i class="fa-solid fa-list icon"></i>
+                  <span class="link">List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery.html" class="nav-link">
+                  <i class="fa-regular fa-images icon"></i>
+                  <span class="link">Gallery</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="articles.html" class="nav-link">
+                  <i class="fa-solid fa-file-contract icon"></i>
+                  <span class="link">Articles</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-regular fa-address-card icon"></i>
+                  <span class="link">Contact us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+            </ul>
+            <div class="lists">
+              <li class="list">
+                <a href="account.html" class="nav-link">
+                  <i class="fa-regular fa-circle-user icon"></i>
+                  <span class="link">Account</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script>
+        const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+          overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      </script>
+      <section class="mt-5 pt-5"></section>
+      <section>
+        <div class="container text-light text-start bg-black bg-opacity-50">
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="slide3.html" target="_blank" class="text-light tdn fsb"><img src="images/7.jpg" class="artcl" alt=""></div>
+            <div>The World's first stationary gasoline car made by Carl Benz</div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="sect3.html" target="_blank" class="text-light tdn fsb"><img src="images/139.jpg" class="artcl" alt=""></div>
+            <div>Ten massive car companies around the Earth and their revenues ranked </div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="slide1.html" target="_blank" class="text-light tdn fsb"><img src="images/36.jpg" class="artcl" alt=""></div>
+            <div>Fastest car to ever exist in the world - The Bugatti Chiron</div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="slide5.html" target="_blank" class="text-light tdn fsb"><img src="images/95.jpg" class="artcl" alt=""></div>
+            <div>Most DANGEROUS motorbike championship that tests the limits of the riders</div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="sect1.html" target="_blank" class="text-light tdn fsb"><img src="images/110.jpg" class="artcl" alt=""></div>
+            <div>Top 10 Fastest cars around the Globe</div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="slide2.html" target="_blank" class="text-light tdn fsb"><img src="images/88.jpg" class="artcl" alt=""></div>
+            <div>Record breaking Kawasaki Ninja H2R holds the title of the quickest bike to be ever made</div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="slide4.html" target="_blank" class="text-light tdn fsb"><img src="images/93.jpg" class="artcl" alt=""></div>
+            <div>CEO of Tesla, Elon Musk, currently spearheading the development of sustainable EVs</div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="slide6.html" target="_blank" class="text-light tdn fsb"><img src="images/102.jpg" class="artcl" alt=""></div>
+            <div>The exciting and adventurous Grand Prix - Formula One Racing</div></a>
+          </div>
+          <div class="d-flex border p-3 col">
+            <div class="pe-3"><a href="sect2.html" target="_blank" class="text-light tdn fsb"><img src="images/122.jpg" class="artcl" alt=""></div>
+            <div>World's fastest top 10 motorcycles ranked acording to top speeds</div></a>
+          </div>
+        </div>
+      </section>
+      <section style="height:10vh;"></section>
+      <section>
+        <footer class="footer">
+          <div class="text-center">
+            <p>
+              <strong>&copy;Motorex 2023</strong>
+              <br>All Rights Reserved.<br>
+              <i class="fa-solid fa-envelope"></i> Motorex-official2023@gmail.com<br>
+              Follow us on 
+              <a href="https://www.facebook.com/robairakash/" target="_blank" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/oldcars_life/" target="_blank" class="text-dark"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.twitter.com/CARmagazine" target="_blank" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>

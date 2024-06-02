@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Motorex</title>
+    <link rel="icon" type="image/x-icon" href="images/0.ico">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+        </div>
+        <a href="index.html">
+        <div class="d-flex justify-content-center padding-left">
+          <img src="images/1.png" alt="Motorex" style="height: 60%; width: 60%;">
+        </div>
+        </a>
+        <div class="padding-left">
+          <a class="btn btn-lg btn-dark" href="searchbar.html" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="p-3">
+        <a class="btn btn-lg btn-dark" href="login.html" role="button">Login</a>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+            <span class="logo-name align-items-center">MOTOREX</span>
+          </div>  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-sharp fa-solid fa-house icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="list.html" class="nav-link">
+                  <i class="fa-solid fa-list icon"></i>
+                  <span class="link">List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery.html" class="nav-link">
+                  <i class="fa-regular fa-images icon"></i>
+                  <span class="link">Gallery</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="articles.html" class="nav-link">
+                  <i class="fa-solid fa-file-contract icon"></i>
+                  <span class="link">Articles</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-regular fa-address-card icon"></i>
+                  <span class="link">Contact us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+            </ul>
+            <div class="lists">
+              <li class="list">
+                <a href="account.html" class="nav-link">
+                  <i class="fa-regular fa-circle-user icon"></i>
+                  <span class="link">Account</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script>
+        const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+          overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      </script>
+      <section class="mt-5 pt-5"></section>
+      <section class="container">
+        <div>
+          <a href="images/5.jpg" target="_blank"><img src="images/5.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/6.jpg" target="_blank"><img src="images/6.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/9.jpg" target="_blank"><img src="images/9.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/10.jpg" target="_blank"><img src="images/10.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/11.jpg" target="_blank"><img src="images/11.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/12.jpg" target="_blank"><img src="images/12.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/13.jpg" target="_blank"><img src="images/13.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/14.jpg" target="_blank"><img src="images/14.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/15.jpg" target="_blank"><img src="images/15.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/16.jpg" target="_blank"><img src="images/16.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/17.jpg" target="_blank"><img src="images/17.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/18.jpg" target="_blank"><img src="images/18.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/19.jpg" target="_blank"><img src="images/19.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/20.jpg" target="_blank"><img src="images/20.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/21.jpg" target="_blank"><img src="images/21.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/22.jpg" target="_blank"><img src="images/22.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/23.jpg" target="_blank"><img src="images/23.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/24.jpg" target="_blank"><img src="images/24.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/25.jpg" target="_blank"><img src="images/25.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/26.jpg" target="_blank"><img src="images/26.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/27.jpg" target="_blank"><img src="images/27.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/28.jpg" target="_blank"><img src="images/28.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/31.jpg" target="_blank"><img src="images/31.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/32.jpg" target="_blank"><img src="images/32.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/33.jpg" target="_blank"><img src="images/33.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/34.jpg" target="_blank"><img src="images/34.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/35.jpg" target="_blank"><img src="images/35.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/36.jpg" target="_blank"><img src="images/36.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/8.jpg" target="_blank"><img src="images/8.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/7.jpg" target="_blank"><img src="images/7.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/82.jpg" target="_blank"><img src="images/82.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/83.jpg" target="_blank"><img src="images/83.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/85.jpg" target="_blank"><img src="images/85.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/86.jpg" target="_blank"><img src="images/86.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/87.jpg" target="_blank"><img src="images/87.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/88.jpg" target="_blank"><img src="images/88.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/90.jpg" target="_blank"><img src="images/90.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/92.jpg" target="_blank"><img src="images/92.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/93.jpg" target="_blank"><img src="images/93.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/94.jpg" target="_blank"><img src="images/94.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/95.jpg" target="_blank"><img src="images/95.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/96.jpg" target="_blank"><img src="images/96.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/97.jpg" target="_blank"><img src="images/97.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/101.jpg" target="_blank"><img src="images/101.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/102.jpg" target="_blank"><img src="images/102.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/109.jpg" target="_blank"><img src="images/109.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/110.jpg" target="_blank"><img src="images/110.jpg" alt="Image" class="img-thumbnail gallery"></a>
+          <a href="images/111.jpg" target="_blank"><img src="images/111.jpg" alt="Image" class="img-thumbnail gallery"></a>
+        </div>
+      </section>
+      <section>
+        <footer class="footer">
+          <div class="text-center">
+            <p>
+              <strong>&copy;Motorex 2023</strong>
+              <br>All Rights Reserved.<br>
+              <i class="fa-solid fa-envelope"></i> Motorex-official2023@gmail.com<br>
+              Follow us on 
+              <a href="https://www.facebook.com/robairakash/" target="_blank" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/oldcars_life/" target="_blank" class="text-dark"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.twitter.com/CARmagazine" target="_blank" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>

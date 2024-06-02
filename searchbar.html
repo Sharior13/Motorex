@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search the web | Motorex</title>
+    <link rel="icon" type="image/x-icon" href="images/0.ico">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0, 8, 51, 0.459),rgba(0, 8, 51, 0.459)), url("images/30.jpg");
+            background-size: cover;
+        }
+        form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        }
+        form.example button {
+        float: left;
+        width: 10%;
+        padding: 10px;
+        background: #4F3CBD;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        }
+        form.example button:hover {
+        opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+        </div>
+        <a href="index.html">
+        <div class="d-flex justify-content-center padding-left">
+          <img src="images/1.png" alt="Motorex" style="height: 60%; width: 60%;">
+        </div>
+        </a>
+        <div class="padding-left">
+          <a class="btn btn-lg btn-dark" href="searchbar.html" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="p-3">
+        <a class="btn btn-lg btn-dark" href="login.html" role="button">Login</a>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+            <span class="logo-name align-items-center">MOTOREX</span>
+          </div>  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-sharp fa-solid fa-house icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="list.html" class="nav-link">
+                  <i class="fa-solid fa-list icon"></i>
+                  <span class="link">List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery.html" class="nav-link">
+                  <i class="fa-regular fa-images icon"></i>
+                  <span class="link">Gallery</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="articles.html" class="nav-link">
+                  <i class="fa-solid fa-file-contract icon"></i>
+                  <span class="link">Articles</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-regular fa-address-card icon"></i>
+                  <span class="link">Contact us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+            </ul>
+            <div class="lists">
+              <li class="list">
+                <a href="account.html" class="nav-link">
+                  <i class="fa-regular fa-circle-user icon"></i>
+                  <span class="link">Account</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script>
+        const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+          overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      </script>
+      <section class="p-5"></section>
+      <section class="container">
+        <div class="ps-5 ms-5">
+            <form class="example" action="https://www.google.com/search" target="_blank" method="get">
+                <input type="text" placeholder="Search anything you want.." name="q">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+      </section>
+      <section style="height: 100vh;"></section>
+      <section>
+        <footer class="footer">
+          <div class="text-center">
+            <p>
+              <strong>&copy;Motorex 2023</strong>
+              <br>All Rights Reserved.<br>
+              <i class="fa-solid fa-envelope"></i> Motorex-official2023@gmail.com<br>
+              Follow us on 
+              <a href="https://www.facebook.com/robairakash/" target="_blank" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/oldcars_life/" target="_blank" class="text-dark"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.twitter.com/CARmagazine" target="_blank" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Motorex</title>
+    <link rel="icon" type="image/x-icon" href="images/0.ico">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+        </div>
+        <a href="index.html">
+        <div class="d-flex justify-content-center padding-left">
+          <img src="images/1.png" alt="Motorex" style="height: 60%; width: 60%;">
+        </div>
+        </a>
+        <div class="padding-left">
+          <a class="btn btn-lg btn-dark" href="searchbar.html" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="p-3">
+        <a class="btn btn-lg btn-dark" href="login.html" role="button">Login</a>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+            <span class="logo-name align-items-center">MOTOREX</span>
+          </div>  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-sharp fa-solid fa-house icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="list.html" class="nav-link">
+                  <i class="fa-solid fa-list icon"></i>
+                  <span class="link">List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery.html" class="nav-link">
+                  <i class="fa-regular fa-images icon"></i>
+                  <span class="link">Gallery</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="articles.html" class="nav-link">
+                  <i class="fa-solid fa-file-contract icon"></i>
+                  <span class="link">Articles</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-regular fa-address-card icon"></i>
+                  <span class="link">Contact us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+            </ul>
+            <div class="lists">
+              <li class="list">
+                <a href="account.html" class="nav-link">
+                  <i class="fa-regular fa-circle-user icon"></i>
+                  <span class="link">Account</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script>
+        const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+          overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      </script>
+      <section class="mt-5"></section>
+      <section class="container cr">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div id="carouselExampleAutoplaying" class="carousel slide pt-5" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="slide1.html">
+              <img src="images/6.jpg" class="d-block w-100" alt="Fastest car">
+              <div class="carousel-caption bg-black bg-opacity-50">
+                <h2>The world's fastest car - Bugatti Chiron</h2>
+                <p>Bugatti Chiron Super Sport 300+ is the current title <br> holder of being the fastest car around <strong>See More...</strong></p>
+              </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="slide2.html">
+              <img src="images/5.jpg" class="d-block w-100" alt="Fastest Bike">
+              <div class="carousel-caption bg-black bg-opacity-50">
+                <h2>Kawasaki Ninja H2R - The record breaker</h2>
+                <p>The fastest bike in the world, Ninja H2R originated from <br> the country of Japan where its company, Kawasaki Motors, is located. <strong>See More...</strong></p>
+              </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="slide3.html">
+              <img src="images/7.jpg" class="d-block w-100" alt="Oldest car">
+              <div class="carousel-caption bg-black bg-opacity-50">
+                <h2>First of it's kind - Benz Patent Motor Car</h2>
+                <p>On January 29, 1886, Carl Benz applied for a patent for his “vehicle <br> powered by a gas engine.” The patent - number 37435 - <strong>See More...</strong></p>
+              </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="slide4.html">
+              <img src="images/8.jpg" class="d-block w-100" alt="The Future">
+              <div class="carousel-caption bg-black bg-opacity-50">
+                <h2>Tesla - The future of all cars</h2>
+                <p>The future of cars and transportation is electric and autonomous, with the trailblazing <br> Tesla leading the charge. Under the visionary leadership of Elon Musk, <strong>See More...</strong>
+                </p>
+              </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="slide5.html">
+              <img src="images/34.jpg" class="d-block w-100" alt="Isle of Man TT">
+              <div class="carousel-caption bg-black bg-opacity-50">
+                <h2>The dangers of Isle of Man TT</h2>
+                <p>The Isle of Man TT or Tourist Trophy races are an annual <br> motorcycle racing event run on the Isle of Man in May/June <strong>See More...</strong></p>
+              </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="slide6.html">
+              <img src="images/35.jpg" class="d-block w-100" alt="Formula One">
+              <div class="carousel-caption bg-black bg-opacity-50">
+                <h2>Formula One - The Biggest championship</h2>
+                <p>Formula One is the highest class of international racing for open-wheel <br> single-seater formula racing cars sanctioned by the Fédération <strong>See More...</strong></p>
+              </div>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="p-5 m-2 text-start">
+        <div class="row">
+          <div class="card bg-dark text-light m-2" style="width: 25rem;">
+            <img src="images/110.jpg" class="card-img-top p-1" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title fsb">Top 10 Fastest cars around the Globe</h5>
+              <p class="card-text">
+                  <ol class="fs">
+                    <li>Bugatti Chiron Super Sport 300+</li>
+                    <li>Hennessey Venom F5</li>
+                    <li>SSC Tuatara</li>
+                    <li>Rimac Nevera</li>
+                    <li>McLaren Speedtail</li>
+                  </ol>
+              </p>
+              <div class="text-center text"> <br>
+                <a href="sect1.html" class="btn btn-primary px-5 fs">View more ➤</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-dark text-light m-2" style="width: 25rem;">
+            <img src="images/111.jpg" class="card-img-top p-1" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title fsb">Top 10 Fastest bikes in the world</h5>
+              <p class="card-text">
+                  <ol class="fs">
+                    <li>Kawasaki Ninja H2R</li>
+                    <li>Ducati Superleggera V4</li>
+                    <li>MTT Y2K Turbine Superbike</li>
+                    <li>Honda CBR1100XX</li>
+                    <li>Suzuki Hayabusa</li>
+                  </ol>
+              </p>
+              <div class="text-center text"> <br>
+                <a href="sect2.html" class="btn btn-primary px-5 fs">View more ➤</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-dark text-light m-2" style="width: 25rem;">
+            <img src="images/139.jpg" class="card-img-top p-1" alt="Logo">
+            <div class="card-body">
+              <h5 class="card-title fsb">Top 10 car companies currently in operation</h5>
+              <p class="card-text">
+                  <ol class="fs">
+                    <li>Volkswagen Group</li>
+                    <li>Toyota Motors</li>
+                    <li>Mercedes-Benz</li>
+                    <li>Ford Motor</li>
+                    <li>General Motors</li>
+                  </ol>
+              </p>
+              <div class="text-center text"> <br>
+                <a href="sect3.html" class="btn btn-primary px-5 fs">View more ➤</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section>
+        <footer class="footer">
+          <div class="text-center">
+            <p>
+              <strong>&copy;Motorex 2023</strong>
+              <br>All Rights Reserved.<br>
+              <i class="fa-solid fa-envelope"></i> Motorex-official2023@gmail.com<br>
+              Follow us on 
+              <a href="https://www.facebook.com/robairakash/" target="_blank" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/oldcars_life/" target="_blank" class="text-dark"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://www.twitter.com/CARmagazine" target="_blank" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+            </p>
+          </div>
+        </footer>
+      </section>
+</body>
+</html>

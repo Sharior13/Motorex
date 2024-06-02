@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | Motorex</title>
+    <link rel="icon" type="image/x-icon" href="images/0.ico">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        form{
+          border: 3px solid #FFFFFF;
+        }
+        input[type=text], input[type=password]{
+          width: 50%;
+          padding: 10px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px soild #FFFFFF;
+          box-sizing: border-box;
+        }
+        button{
+          background-color: #4F3CBD;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 50%;
+        }
+        button:hover{
+          opacity: 0.8;
+        }
+        .imgcontainerr{
+          text-align: center;
+          margin: 24px 0 12px 0;
+        }
+        img.avatarr{
+          width: 20%;
+          border-radius: 50%;
+        }
+        .containerr{
+          padding: 16px;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+        </div>
+        <a href="index.html">
+        <div class="d-flex justify-content-center padding-left">
+          <img src="images/1.png" alt="Motorex" style="height: 60%; width: 60%;">
+        </div>
+        </a>
+        <div class="padding-left">
+          <a class="btn btn-lg btn-dark" href="searchbar.html" role="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <div class="p-3">
+        <a class="btn btn-lg btn-dark" href="login.html" role="button">Login</a>
+        </div>
+        <div class="sidebar">
+          <div class="logo">
+            <i class="fa-solid fa-bars menu-icon" style="color: #000000;"></i>
+            <span class="logo-name align-items-center">MOTOREX</span>
+          </div>  
+          <div class="sidebar-content">
+            <ul class="lists">
+              <li class="list">
+                <a href="index.html" class="nav-link">
+                  <i class="fa-sharp fa-solid fa-house icon"></i>
+                  <span class="link">Home</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="list.html" class="nav-link">
+                  <i class="fa-solid fa-list icon"></i>
+                  <span class="link">List</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="gallery.html" class="nav-link">
+                  <i class="fa-regular fa-images icon"></i>
+                  <span class="link">Gallery</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="articles.html" class="nav-link">
+                  <i class="fa-solid fa-file-contract icon"></i>
+                  <span class="link">Articles</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="contact.html" class="nav-link">
+                  <i class="fa-regular fa-address-card icon"></i>
+                  <span class="link">Contact us</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="about.html" class="nav-link">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <span class="link">About</span>
+                </a>
+              </li>
+            </ul>
+            <div class="lists">
+              <li class="list">
+                <a href="account.html" class="nav-link">
+                  <i class="fa-regular fa-circle-user icon"></i>
+                  <span class="link">Account</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="overlay"></section>
+      <script>
+        const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+          overlay = document.querySelector(".overlay");
+        menuBtns.forEach((menuBtn) => {
+          menuBtn.addEventListener("click", () => {
+            navBar.classList.toggle("open");
+          });
+        });
+        overlay.addEventListener("click", () => {
+          navBar.classList.remove("open");
+        });
+      </script>
+      <section class="mt-5 pt-5"></section>
+      <section class="container pb-5 mb-5 font-monospace">
+        <form action="index.html" method="get">
+          <div class="text-center bg-white bg-opacity-50 text-body ps-2">
+            <h2>Change username</h2>
+          </div>
+          <div class="imgcontainerr">
+            <img src="images/29.jpg" alt="Avatar" class="avatarr">
+          </div>
+          <div class="containerr text-secondary">
+            <label><h2>Username</h2></label><br>
+            <input type="text" name="uname" placeholder="Enter new username"required><br>
+            <button onclick="showAlert()">Save changes</button>
+          </div>
+        </form>
+        <script src="jquery/jqueryy.js"></script>
+        <script>
+          function showAlert(){
+            let uname = "";
+            let user_uname = $("input[name=uname]").val();
+            if(uname == user_uname){
+                    return false;
+                }
+                else{
+                    alert("Login successful!")
+                }
+            }
+        </script>
+        </section>
+        <section>
+          <footer class="footer">
+            <div class="text-center">
+              <p>
+                <strong>&copy;Motorex 2023</strong>
+                <br>All Rights Reserved.<br>
+                <i class="fa-solid fa-envelope"></i> Motorex-official2023@gmail.com<br>
+                Follow us on 
+                <a href="https://www.facebook.com/robairakash/" target="_blank" class="text-dark"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/oldcars_life/" target="_blank" class="text-dark"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.twitter.com/CARmagazine" target="_blank" class="text-dark"><i class="fa-brands fa-twitter"></i></a>
+              </p>
+            </div>
+          </footer>
+        </section>
+</body>
+</html>
